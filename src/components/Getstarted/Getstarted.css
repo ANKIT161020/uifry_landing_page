@@ -1,0 +1,91 @@
+.getstarted_div {
+  width: 70vw;
+  height: 65vh;
+  margin: 5vw auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.started_left {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.started_left p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.started_heading {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.started_sub_heading {
+  width: 90%;
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 50%;
+}
+
+.download_btn {
+  width: 33%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 4px;
+  column-gap: 1vh;
+  background-color: white;
+  color: black;
+  margin: 3vh auto;
+}
+
+.download_btn i {
+  font-size: 1.5em;
+}
+
+.started_right {
+  width: 50%;
+  height: 100%;
+}
+
+.started_right img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .getstarted_div {
+    margin-top: 4vh;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+
+  .started_right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .started_left {
+    width: 100%;
+    height: 100%;
+  }
+
+  .download_btn {
+    width: 50%;
+    height: 5vh;
+  }
+}

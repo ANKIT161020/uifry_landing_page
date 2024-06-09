@@ -1,0 +1,111 @@
+.testimonial_div {
+  width: 76vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testi_container {
+  width: 100%;
+  height: 95%;
+  display: flex;
+}
+
+.testimonial_left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial_left img {
+  width: 100%;
+}
+
+.testimonial_right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testi_topic {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 4px;
+}
+
+.testi_sub_topic {
+  width: 65%;
+  margin: auto;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 3vh;
+}
+
+.testi_name {
+  width: 90%;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.testi_desc {
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 50%;
+  text-align: left;
+  width: 90%;
+  margin: 3vh 0;
+}
+
+.testiPersons {
+  width: 40%;
+  margin: 1vh 0;
+}
+
+.testiPersons img {
+  width: 100%;
+}
+
+.testiClientName {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 2vh 0;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial_div {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 2vh;
+    padding-left: 1vw;
+  }
+
+  .testi_container {
+    flex-direction: column;
+  }
+
+  .testi_sub_topic,
+  .testi_topic {
+    width: 100%;
+    text-align: left;
+  }
+
+  .testimonial_left {
+    width: 100vw;
+  }
+
+  .testimonial_right {
+    width: 100vw;
+  }
+}
