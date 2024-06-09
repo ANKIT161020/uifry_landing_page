@@ -10,41 +10,68 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-logo">
             <div className="logo">
-              <img src={logo} alt="Uifry" />
-              <span>uifry</span>
+              <a href="#Home">
+                <img src={logo} alt="Uifry" />
+                <span>uifry</span>
+              </a>
             </div>
             <div className="f_help">
               <img src={help} alt="Uifry" />
-              <span>Help@Frybix.Com</span>
+              <a href="mailto:Help@Frybix.Com?body=Ask your Query">
+                <span>Help@Frybix.Com</span>
+              </a>
             </div>
             <div className="f_help">
               <img src={call} alt="Uifry" />
-              <span>+1234 456 678 89</span>
+              <a href="tel:+1234 456 678 89">
+                <span>+1234 456 678 89</span>
+              </a>
             </div>
           </div>
           <div className="footer-links">
             <h2>Links</h2>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Bookings</li>
-              <li>Blog</li>
+              <li>
+                <a href="#Home">Home</a>
+              </li>
+              <li>
+                <a href="#Aboutus">About Us</a>
+              </li>
+              <li>
+                <a href="#Bookings">Bookings</a>
+              </li>
+              <li>
+                <a href="#Blog">Blog</a>
+              </li>
             </ul>
           </div>
           <div className="footer-legal">
             <h2>Legal</h2>
             <ul>
-              <li>Terms Of Use</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
+              <li>
+                {" "}
+                <a href="#Terms">Terms Of Use</a>
+              </li>
+              <li>
+                <a href="#Privacy">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#Cookie">Cookie Policy</a>
+              </li>
             </ul>
           </div>
           <div className="footer-product">
             <h2>Product</h2>
             <ul>
-              <li>Take Tour</li>
-              <li>Live Chat</li>
-              <li>Reviews</li>
+              <li>
+                <a href="#Tour">Take Tour</a>
+              </li>
+              <li>
+                <a href="#Chat">Live Chat</a>
+              </li>
+              <li>
+                <a href="#Reviews">Reviews</a>
+              </li>
             </ul>
           </div>
           <div className="footer-newsletter">

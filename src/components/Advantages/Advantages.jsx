@@ -7,7 +7,7 @@ import "./Advantages.css";
 export default function Advantages() {
   return (
     <>
-      <div className="advantages_div">
+      <div className="advantages_div" id="Pricing">
         <div className="advantage1">
           <div className="advantages1_left">
             <p className="advantage_topic">ADVANTAGES</p>

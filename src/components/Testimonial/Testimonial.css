@@ -75,6 +75,7 @@
 
 .testiPersons img {
   width: 100%;
+  cursor: pointer;
 }
 
 .testiClientName {
@@ -101,8 +102,27 @@
     text-align: left;
   }
 
+  .testi_topic {
+    font-size: 0.8em;
+  }
+
+  .testi_sub_topic {
+    font-size: 2em;
+  }
+
+  .testi_name {
+    font-size: 1.5em;
+  }
+
+  .testi_desc {
+    font-size: 1em;
+  }
+
+  .testiClientName {
+    font-size: 1em;
+  }
   .testimonial_left {
-    width: 100vw;
+    width: 90%;
   }
 
   .testimonial_right {

@@ -59,9 +59,17 @@
     padding-left: 1vw;
   }
 
+  .faq_topic {
+    font-size: 1em;
+  }
+
   .faq_sub_topic {
     width: 100vw;
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+
+  .faq-item h2 {
+    font-size: 1.5em;
   }
 
   .faq-grid {

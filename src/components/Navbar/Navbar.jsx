@@ -5,6 +5,12 @@ import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activePage, setActivePage] = useState("Home");
+
+  const handleSetActivePage = (page) => {
+    setActivePage(page);
+    setIsOpen(false);
+  };
 
   const toggleMenu = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
@@ -14,22 +20,48 @@ function Navbar() {
     <>
       <nav className="navbar_div">
         <div className="logo_container">
-          <img src={logo} alt="Uifry" />
-          <span>uifry</span>
+          <a href="#Home">
+            <img src={logo} alt="Uifry" />
+            <span>uifry</span>
+          </a>
         </div>
         <div className={`nav_items ${isOpen ? "show_menu" : ""}`}>
           <ul className="nav_list">
             <li>
-              <a href="#">Home</a>
+              <a
+                href="#Home"
+                className={activePage === "Home" ? "active" : ""}
+                onClick={() => handleSetActivePage("Home")}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a
+                href="#Features"
+                className={activePage === "Features" ? "active" : ""}
+                onClick={() => handleSetActivePage("Features")}
+              >
+                Features
+              </a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a
+                href="#Pricing"
+                className={activePage === "Pricing" ? "active" : ""}
+                onClick={() => handleSetActivePage("Pricing")}
+              >
+                Pricing
+              </a>
             </li>
             <li>
-              <a href="#">Features</a>
+              <a
+                href="#Aboutus"
+                className={activePage === "Aboutus" ? "active" : ""}
+                onClick={() => handleSetActivePage("Aboutus")}
+              >
+                About Us
+              </a>
             </li>
           </ul>
 

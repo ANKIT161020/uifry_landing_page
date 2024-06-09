@@ -94,7 +94,7 @@
 
   .advantages1_right img,
   .advantages2_left img {
-    width: 100%;
+    width: 90%;
   }
 
   .advantages1_left,
@@ -102,5 +102,21 @@
     width: 100%;
     height: 100%;
     padding-left: 1vw;
+  }
+
+  .advantage_topic {
+    font-size: 1em;
+  }
+
+  .why_uifry {
+    font-size: 2em;
+  }
+
+  .advantage_name {
+    font-size: 1em;
+  }
+
+  .advantage_desc {
+    font-size: 0.8em;
   }
 }

@@ -23,6 +23,11 @@
   font-weight: 700;
 }
 
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+
 .f_help {
   width: 100%;
   display: flex;
@@ -31,6 +36,16 @@
   align-items: flex-start;
   justify-content: flex-start;
   font-size: 1em;
+  cursor: pointer;
+}
+
+.f_help a {
+  color: black;
+  text-decoration: none;
+}
+
+.f_help:hover {
+  color: #ff5555;
 }
 
 .footer-links,
@@ -60,6 +75,20 @@
 .footer-product li {
   margin: 0.5em 0;
   font-size: 1em;
+  cursor: pointer;
+}
+
+.footer-links li a,
+.footer-legal li a,
+.footer-product li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links li a:hover,
+.footer-legal li a:hover,
+.footer-product li a:hover {
+  color: #ff5555;
 }
 
 .footer-newsletter {
@@ -141,5 +170,12 @@
   .footer-newsletter input,
   .footer-newsletter button {
     width: 100%;
+  }
+
+  .footer-links h2,
+  .footer-legal h2,
+  .footer-product h2,
+  .footer-newsletter h2 {
+    font-size: 1.2em;
   }
 }

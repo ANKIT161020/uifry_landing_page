@@ -8,7 +8,7 @@ import "./Features.css";
 export default function Features() {
   return (
     <>
-      <div className="features_div">
+      <div className="features_div" id="Features">
         <div className="feature_left">
           <img src={featureImg} alt="" />
         </div>

@@ -5,7 +5,7 @@ import "./Testimonial.css";
 export default function Testimonial() {
   return (
     <>
-      <div className="testimonial_div">
+      <div className="testimonial_div" id="Aboutus">
         <div className="testimonial_heading">
           <p className="testi_topic">TESTIMONIAL</p>
           <p className="testi_sub_topic">What Our Users Say About Us?</p>
@@ -25,10 +25,10 @@ export default function Testimonial() {
               rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
               ac dolor neque lorem sapien, suspendisse aliquam.”
             </div>
+            <div className="testiClientName">Nick Jonas</div>
             <div className="testiPersons">
               <img src={testiPerson} alt="" />
             </div>
-            <div className="testiClientName">Nick Jonas</div>
           </div>
         </div>
       </div>

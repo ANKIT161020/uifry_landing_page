@@ -61,6 +61,7 @@
   font-size: 1.2em;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .video_btn {
@@ -71,6 +72,7 @@
   width: 50%;
   height: 28%;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .right {
@@ -102,26 +104,27 @@
     padding-left: 1vw;
   }
   .down_left {
-    width: 100%;
+    width: 90%;
     height: 50%;
     margin-top: 3vh;
   }
 
   .hero_tag {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .hero_sub_tag {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 1vh;
   }
 
   .right {
-    width: 100%;
+    width: 90vw;
+    margin: 0 auto;
     height: fit-content;
   }
 
   .down_left img {
-    width: 99vw;
+    width: 100%;
   }
 }

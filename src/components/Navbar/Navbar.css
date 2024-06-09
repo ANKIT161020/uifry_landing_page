@@ -1,8 +1,12 @@
 .navbar_div {
-  width: 76vw;
-  height: 6.5vh;
-  margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.47);
+  backdrop-filter: blur(100px);
+  width: 100vw;
+  height: 8vh;
   display: flex;
+  justify-content: space-evenly;
   margin-top: 4.5vh;
   font-weight: 500;
   z-index: 1;
@@ -18,20 +22,23 @@
   font-weight: 600;
 }
 
+.logo_container a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav_items {
-  padding-left: 3vw;
-  width: 100%;
+  width: 30%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav_list {
-  width: 50%;
+  width: 100%;
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 20px;
 }
 
@@ -40,7 +47,7 @@
 }
 
 .down_btn {
-  width: 100%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -49,6 +56,7 @@
   background-color: black;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .nav_list a {
@@ -56,7 +64,8 @@
   color: black;
 }
 
-.nav_list a:hover {
+.nav_list a:hover,
+.nav_list a.active {
   color: #ff5555;
   font-weight: 700;
   cursor: pointer;
@@ -74,10 +83,10 @@
   }
 
   .navbar_div {
-    width: 100vw;
+    width: 98vw;
     margin: 0;
     justify-content: space-evenly;
-    position: relative;
+    /* position: relative; */
   }
 
   .logo_container {
@@ -135,6 +144,10 @@
   }
 
   .nav_list a:hover {
+    color: black;
+  }
+
+  .nav_list a.active {
     color: black;
   }
 }
